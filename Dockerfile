@@ -9,3 +9,5 @@ RUN git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.v
 COPY vimrc ~/.vimrc
 
 COPY bash_profile ~/.bash_profile
+
+ENTRYPOINT ["bash"]
