@@ -1,2 +1,2 @@
 # bash
-ubuntu + bash dockerfile
+Alpine Linux + bash dockerfile
