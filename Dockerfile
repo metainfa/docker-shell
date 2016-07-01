@@ -7,3 +7,5 @@ RUN apk add --update bash curl git vim
 RUN git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
 COPY vimrc ~/.vimrc
+
+COPY bash_profile ~/.bash_profile
