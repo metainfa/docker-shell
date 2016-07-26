@@ -10,4 +10,6 @@ COPY vimrc /root/.vimrc
 
 COPY bashrc /root/.bashrc
 
+RUN vim -c VundleUpdate -c quitall
+
 ENTRYPOINT ["bash"]
