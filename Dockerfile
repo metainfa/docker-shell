@@ -10,7 +10,5 @@ COPY vimrc /root/.vimrc
 
 RUN vim -c VundleUpdate -c quitall
 
-RUN chsh -s /usr/bin/fish
-
-ENTRYPOINT ["bash"]
+ENTRYPOINT ["fish"]
 
