@@ -2,7 +2,7 @@ FROM alpine:latest
 
 MAINTAINER Pierre Prinetti <me@qrawl.net>
 
-RUN apk add --no-cache bash curl git vim
+RUN apk add --no-cache bash curl git python3 vim
 
 RUN git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
