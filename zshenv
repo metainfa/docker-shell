@@ -2,7 +2,6 @@ export EDITOR=vim
 export GOPATH=~/code/go
 export PATH="${GOPATH}/bin:${PATH}"
 alias g='git'
-alias s='spotify'
 alias v='vim'
 alias fd='find . -type d -name'
 alias ff='find . -type f -name'
@@ -18,5 +17,3 @@ docker-restore-volume() {
         docker run --rm -v ${volname}:/vol -v ${filepath}:/bkp/${filename} pierreprinetti/bash -c "tar xzvf /bkp/${filename} -C /vol";
 }
 docker-purge-volumes() { docker volume rm $(docker volume ls -qf dangling=true) }
-
-# source ~/ded-setup

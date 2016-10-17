@@ -6,6 +6,7 @@ RUN apk add --no-cache zsh curl git python3 vim
 
 ENV HOME=/root
 
+# oh-my-zsh script seems to always return 1, even on successfull install.
 RUN sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)" || true
 
 RUN git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
