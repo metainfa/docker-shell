@@ -1,2 +1,2 @@
-# bash
-Alpine Linux + bash dockerfile
+# shell
+Alpine Linux + zsh
