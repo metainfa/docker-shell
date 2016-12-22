@@ -2,7 +2,7 @@ FROM alpine:latest
 
 MAINTAINER Pierre Prinetti <me@qrawl.net>
 
-RUN apk add --no-cache zsh curl git python3 vim
+RUN apk add --no-cache zsh curl git python3 vim ctags
 
 ENV HOME=/root
 
