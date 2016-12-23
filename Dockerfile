@@ -5,6 +5,7 @@ MAINTAINER Pierre Prinetti <me@qrawl.net>
 RUN apk add --no-cache zsh curl git go python3 vim ctags
 
 ENV HOME=/root
+ENV GOPATH=/root/go
 
 # oh-my-zsh script seems to always return 1, even on successfull install.
 RUN sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)" || true
