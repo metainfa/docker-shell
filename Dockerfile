@@ -2,7 +2,7 @@ FROM alpine:latest
 
 MAINTAINER Pierre Prinetti <me@qrawl.net>
 
-RUN apk add --no-cache zsh curl git go python3 vim ctags
+RUN apk add --no-cache build-base zsh curl git go python3 vim ctags
 
 ENV HOME=/root
 ENV GOPATH=/root/go
@@ -17,6 +17,7 @@ COPY vimrc /root/.vimrc
 COPY zshrc /root/.zshrc
 COPY zshenv /root/.zshenv
 
-RUN vim -c VundleUpdate -c GoInstallBinaries -c quitall
+RUN vim -c VundleUpdate -c quitall
+RUN vim -c GoInstallBinaries -c quitall
 
 ENTRYPOINT ["zsh"]
