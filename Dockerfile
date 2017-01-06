@@ -14,11 +14,10 @@ RUN sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh
 RUN git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
 COPY vimrc /root/.vimrc
-
 COPY zshrc /root/.zshrc
 COPY zshenv /root/.zshenv
 
 RUN vim -c VundleUpdate -c quitall
-RUN vim -c GoInstallBinaries -c quitall
+# RUN vim -c GoInstallBinaries -c quitall
 
 ENTRYPOINT ["zsh"]
